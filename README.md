@@ -1,59 +1,67 @@
 # BOOMBRIX — IoT Tree Health Monitoring for Cities
 
-> Startup in Residence Amsterdam · 2018–2019  
-> Co-founders: Jakub Supera & Noelle Teh
+> Co-founders: Jakub Supera & Noelle Teh · Startup in Residence Amsterdam · 2018–2019
 
 ---
 
-## The Problem
+Amsterdam manages over 1,000,000 trees. Around 50% suffer from moisture stress during dry periods — yet the only way to know which ones need water was to send an arborist (€40–50/hr) to check manually. Neither scalable nor fast enough to prevent loss.
 
-Amsterdam manages **1,000,000+ trees**. Around 50% suffer from moisture stress during dry periods. Monitoring tree health traditionally relies on expensive arborists (€40–50/hr) and manual inspection — neither scalable nor timely. Satellite imagery alone can't capture soil-level conditions.
+Satellite imagery exists, but it can't tell you what's happening below the surface. We built BOOMBRIX to close that gap.
 
-## Our Solution
+---
 
-BOOMBRIX combined ground-level IoT sensors with satellite NDVI data to give municipalities precise, real-time information on which trees need watering and when.
+## Business Model
 
-**How it worked:**
-- Underground soil moisture sensors (Arduino-based units with GSM transmission) installed within the first 500mm of soil
-- Sensor data correlated with Sentinel satellite NDVI indices to build a ground-truth model
-- Dashboard providing actionable recommendations per tree
+![Business Model](assets/boombrix-business-en.svg)
 
-## Hardware
+---
 
-- 10 custom Arduino units with GSM connectivity
-- Battery-powered, minimal surface disturbance during installation
-- Tested across different soil conditions and tree pit designs
+## Technical Architecture
 
-## Pilot Results
+![Technical Architecture](assets/boombrix-arch.svg)
 
-**Location:** Rapenburgerstraat, Amsterdam  
-**Scale:** 9 trees · 8 weeks
+---
+
+## What We Built
+
+A hardware-software system combining underground soil moisture sensors with satellite NDVI data to give city managers precise, per-tree watering recommendations — updated continuously, no arborist needed.
+
+Each BOOMBRIX unit: Arduino-based sensor, GSM transmission, installed within the first 500mm of soil with minimal surface disturbance. Sensor data was correlated with Sentinel satellite indices to build a ground-truth model that neither data source could produce alone.
+
+The output: a dashboard telling you exactly which trees are vulnerable, and when to act.
+
+---
+
+## Who It's For
+
+**Municipalities** managing urban forests at scale — Amsterdam was our first customer, but the model applies to any city managing significant tree stock.
+
+**Private real estate holdings** with landscaping obligations or sustainability commitments — where healthy trees have direct asset value.
+
+---
+
+## Business Model
+
+We own the devices. Clients subscribe to the data. This means recurring revenue, continuous sensor data ownership, and a defensible position as the dataset grows — ground-truth data that competitors using satellite-only approaches simply don't have.
+
+---
+
+## Pilot
+
+**Location:** Rapenburgerstraat, Amsterdam · **Scale:** 9 trees · 8 weeks
 
 Key findings:
-- Observable differences in soil moisture even at street-level granularity
-- Measurable differences between tree pit design types (-5cm/-10cm vs -20cm soil depth)
-- Ground sensor data successfully complemented satellite NDVI readings
-
-## Business Outcome
-
-- Selected for **Startup in Residence Amsterdam** after competitive pitch process
-- Presented at **SiRA Grand Final** (November 2019)
-- Signed **framework agreement with the City of Amsterdam**
-- Case owner: Jaike Bijleveld, Senior Advisor Asset Management Green, Gemeente Amsterdam
-
-## Journey
-
-University entrepreneurship module → internal pitch → SiRA application → hardware iterations → pilot → Demo Day → framework agreement
+- Observable soil moisture differences at street-level granularity
+- Measurable variance between tree pit designs at different depths (-5cm/-10cm vs -20cm)
+- Ground sensor data successfully validated and enriched satellite NDVI readings
 
 ---
 
-## Files
+## Journey & Outcome
 
-| File | Description |
-|------|-------------|
-| `Boombrix PITCH Startup in Residence 8_04_19.pptx` | Original pitch deck for SiRA selection |
-| `SiRA Grand Final.pptx` | Final presentation with pilot results |
-| `191219_Pilot Report_FINAL.docx` | Full pilot report |
+University entrepreneurship module → competitive Startup in Residence Amsterdam selection → hardware iterations → paid pilot → Demo Day → **framework agreement with the City of Amsterdam**
+
+Case owner: Jaike Bijleveld, Senior Advisor Asset Management Green, Gemeente Amsterdam
 
 ---
 

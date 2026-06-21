@@ -1,0 +1,35 @@
+<svg viewBox="0 0 680 220" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, sans-serif">
+  <rect width="680" height="220" fill="#ffffff" rx="8"/>
+  <text x="20" y="22" font-size="10" font-weight="700" fill="#6c757d" letter-spacing="1.2">BOOMBRIX — TECHNICAL ARCHITECTURE</text>
+  <defs><marker id="a" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#0F528C"/></marker></defs>
+  <rect x="20" y="60" width="100" height="56" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="70" y="80" text-anchor="middle" font-size="10" font-weight="600" fill="#1A1A2E">Arduino</text>
+  <text x="70" y="95" text-anchor="middle" font-size="8" fill="#64748b">10× units</text>
+  <text x="70" y="107" text-anchor="middle" font-size="8" fill="#64748b">soil moisture sensor</text>
+  <line x1="120" y1="88" x2="154" y2="88" stroke="#0F528C" stroke-width="1.2" marker-end="url(#a)"/>
+  <text x="137" y="82" text-anchor="middle" font-size="7" fill="#0F528C">GSM</text>
+  <rect x="158" y="60" width="100" height="56" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="208" y="80" text-anchor="middle" font-size="10" font-weight="600" fill="#1A1A2E">Data Store</text>
+  <text x="208" y="95" text-anchor="middle" font-size="8" fill="#64748b">sensor readings</text>
+  <text x="208" y="107" text-anchor="middle" font-size="8" fill="#64748b">per tree · per hour</text>
+  <line x1="258" y1="88" x2="292" y2="88" stroke="#0F528C" stroke-width="1.2" marker-end="url(#a)"/>
+  <rect x="158" y="140" width="100" height="48" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="208" y="160" text-anchor="middle" font-size="10" font-weight="600" fill="#1A1A2E">Sentinel-2</text>
+  <text x="208" y="175" text-anchor="middle" font-size="8" fill="#64748b">ESA · NDVI · weekly</text>
+  <line x1="258" y1="164" x2="292" y2="110" stroke="#0F528C" stroke-width="1.2" marker-end="url(#a)"/>
+  <rect x="296" y="60" width="110" height="56" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="351" y="80" text-anchor="middle" font-size="10" font-weight="600" fill="#1A1A2E">Correlation</text>
+  <text x="351" y="95" text-anchor="middle" font-size="8" fill="#64748b">sensor ↔ NDVI</text>
+  <text x="351" y="107" text-anchor="middle" font-size="8" fill="#64748b">ground truth model</text>
+  <line x1="406" y1="88" x2="440" y2="88" stroke="#0F528C" stroke-width="1.2" marker-end="url(#a)"/>
+  <rect x="444" y="60" width="100" height="56" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="494" y="80" text-anchor="middle" font-size="10" font-weight="600" fill="#1A1A2E">Processing</text>
+  <text x="494" y="95" text-anchor="middle" font-size="8" fill="#64748b">Python · NumPy</text>
+  <text x="494" y="107" text-anchor="middle" font-size="8" fill="#64748b">vulnerability score</text>
+  <line x1="544" y1="88" x2="578" y2="88" stroke="#0F528C" stroke-width="1.2" marker-end="url(#a)"/>
+  <rect x="582" y="60" width="82" height="56" rx="6" fill="#0F528C"/>
+  <text x="623" y="80" text-anchor="middle" font-size="10" font-weight="600" fill="#fff">Dashboard</text>
+  <text x="623" y="95" text-anchor="middle" font-size="8" fill="#bcd4e6">per-tree</text>
+  <text x="623" y="107" text-anchor="middle" font-size="8" fill="#bcd4e6">recommendations</text>
+  <text x="20" y="205" font-size="8" fill="#94a3b8">stack:  Arduino · GSM · Python · NumPy · Sentinel Hub (ESA) · NDVI correlation · web dashboard</text>
+</svg>

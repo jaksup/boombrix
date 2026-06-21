@@ -1,0 +1,6 @@
+*.pptx
+*.docx
+*.xlsx
+*.tmp
+.~lock.*
+.DS_Store
